@@ -1,31 +1,34 @@
 import Titulo from "../components/Titulo";
 import Subtitulo from "../components/Subtitulo";
-import Texto from "../components/Texto";
+import Image from "next/image";
+import Texto from "@/components/Texto";
+
 export default function Home() {
   return (
     <main className="flex flex-col w-full">
-      {/* Sección Presentación (About) */}
-      <section className="flex flex-col items-center justify-center text-center min-h-screen py-20 bg-gradient-to-b from-blue-100 to-white" id="about">
-        <Titulo text="Hola, soy Iván Ventura" />
-        <Subtitulo text="Desarrollador web y móvil con React, Next.js y React Native" />
-        <Texto text="Bienvenido a mi portfolio. Aquí podrás conocer mis proyectos, habilidades y cómo contactarme." />
-      </section>
 
-      {/* Sección Proyectos */}
-      <section className="flex flex-col items-center py-20 bg-white min-h-screen" id="proyectos">
-        <Subtitulo text="Proyectos" />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl">
-          {/* Ejemplo de proyecto */}
-          <div className="bg-gray-100 rounded-lg shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Proyecto 1</h3>
-            <p className="mb-2">Descripción breve del proyecto 1.</p>
-            <a href="#" className="text-blue-600 hover:underline">Ver más</a>
+      {/* Sección Presentación (About) */}
+      <section id="about">
+        <div className="flex flex-row md:flex-row items-center justify-center min-h-screen py-20 bg-gradient-to-b from-blue-100 to-white gap-10">
+          <div className="flex-shrink-0">
+            <Image
+              src="/assets/CV.jpg"
+              alt="Imagen de presentación"
+              width={300}
+              height={300}
+              className="rounded-full border-4 border-blue-200 shadow-lg"
+            />
           </div>
-          <div className="bg-gray-100 rounded-lg shadow p-6">
-            <h3 className="text-xl font-semibold mb-2">Proyecto 2</h3>
-            <p className="mb-2">Descripción breve del proyecto 2.</p>
-            <a href="#" className="text-blue-600 hover:underline">Ver más</a>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left margen-left-grande">
+            <Titulo text="¡Bienvenido a mi portfolio!" />
           </div>
+        </div>
+        <div
+          className="mt-8 bg-white bg-opacity-80 border-2 border-white rounded-lg p-8 shadow-lg max-w-xl"
+          style={{ color: "var(--color-blanco)" }}
+        >
+          <Subtitulo text="Sobre mi" />  
+          <Texto text="Hola, soy Iván Ventura, un desarrollador web y móvil apasionado por crear experiencias digitales modernas y funcionales. Me especializo en React, Next.js y React Native. Me encanta aprender nuevas tecnologías y trabajar en proyectos creativos que marquen la diferencia." />      
         </div>
       </section>
 
@@ -41,12 +44,6 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* Sección Contacto */}
-      <section className="flex flex-col items-center py-20 bg-white min-h-[60vh]" id="contacto">
-        <Subtitulo text="Contacto" />
-        <Texto text="¿Quieres ponerte en contacto conmigo?" />
-        <a href="mailto:ivan@email.com" className="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition">Envíame un email</a>
-      </section>
     </main>
   );
 }
