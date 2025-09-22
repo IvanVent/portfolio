@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  // i18n eliminado: no compatible con App Router
 };
 
 export default nextConfig;

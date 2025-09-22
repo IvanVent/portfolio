@@ -1,9 +1,14 @@
+
+'use client';
 import Titulo from "../components/Titulo";
 import Subtitulo from "../components/Subtitulo";
 import Image from "next/image";
 import Texto from "@/components/Texto";
+import { useTranslation } from "react-i18next";
+import '../i18n';
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
     <main className="flex flex-col w-full">
 
@@ -20,15 +25,15 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-col items-center md:items-start text-center md:text-left margen-left-grande">
-            <Titulo text="¡Bienvenido a mi portfolio!" />
+            <Titulo text={t('greeting')} />
           </div>
         </div>
         <div
           className="mt-8 bg-white bg-opacity-80 border-2 border-white rounded-lg p-8 shadow-lg max-w-xl"
           style={{ color: "var(--color-blanco)" }}
         >
-          <Subtitulo text="Sobre mi" />  
-          <Texto text="Hola, soy Iván Ventura, un desarrollador web y móvil apasionado por crear experiencias digitales modernas y funcionales. Me especializo en React, Next.js y React Native. Me encanta aprender nuevas tecnologías y trabajar en proyectos creativos que marquen la diferencia." />      
+          <Subtitulo text={t('about')} />
+          <Texto text={"Hola, soy Iván Ventura, un desarrollador web y móvil apasionado por crear experiencias digitales modernas y funcionales. Me especializo en React, Next.js y React Native. Me encanta aprender nuevas tecnologías y trabajar en proyectos creativos que marquen la diferencia."} />
         </div>
       </section>
 
