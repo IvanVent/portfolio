@@ -3,11 +3,12 @@ import React from 'react';
 
 interface TitleProps {
     text: string;
+    customStyle?: string;
 }
 
-function Texto ({ text }: TitleProps) {
+function Texto ({ text, customStyle }: TitleProps) {
     return (
-        <p className="texto">{text}</p>
+        <p className={`texto ${customStyle}`}>{text}</p>
     );
 }
 

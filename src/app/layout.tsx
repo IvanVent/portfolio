@@ -9,6 +9,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main className="min-h-screen p-6">{children}</main>
         <Footer />
+        <br />
+        <br />
+        <br />
+        <br />
       </body>
     </html>
   )
