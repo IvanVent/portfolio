@@ -15,13 +15,17 @@
   color: var(--color-gris)
 }
 
+.links {
+  display: flex;
+  flex-direction: row;
+}
+
 .redes {
   flex: 1;
   text-align: left;
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin-left: 2.5rem;
 }
 
 .contacto {
@@ -30,16 +34,16 @@
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  margin-right: 2.5rem;
 }
 .info{
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  margin: 2.5rem;
 }
 
 .colaborar {
   text-align: right;
+  margin: 2.5rem;
 }
 
 .hr {
