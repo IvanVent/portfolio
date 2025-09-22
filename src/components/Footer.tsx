@@ -2,22 +2,19 @@ import Texto from "./Texto";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <div className="colaborar">
         <Texto text="Tienes un proyecto interesante? Vamos a trabajar juntos!" customStyle="margen-grande" />
       </div>
-      <div className="hr row">
-      </div>
+      <hr className="hr" />
       <div className="info">
         <div id="Redes" className="redes">
-          <Texto text="Sigueme!" customStyle="margen-grande" />
-          <Texto text="LinkedIn | GitHub | Twitter" customStyle="margen-grande" />
-
+          <Texto text="Sigueme!" customStyle="texto-secundario" />
+          <Texto text="LinkedIn | GitHub | Twitter" customStyle="margen-negativo-top" />
         </div>
         <div id="Contacto" className="contacto">
-          <Texto text="Contáctame!" customStyle="margen-grande" />
-          <Texto text="Email: contacto@ejemplo.com" customStyle="margen-grande" />
-
+          <Texto text="Contáctame!" customStyle="texto-secundario" />
+          <Texto text="iventurasegui@gmail.com" customStyle="margen-negativo-top" />
         </div>
 
       </div>
