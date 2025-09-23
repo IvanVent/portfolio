@@ -25,6 +25,17 @@ export default function ProjectsPage() {
                     height={405}
                 />
             </div>
+            <div className="whitespace"></div>
+            <div id="project-image-2" className="image-project-2">
+                <Image
+                    src="/assets/sokoban-captura.png"
+                    alt="Sokoban"
+                    width={675}
+                    height={469}
+                />
+                <Titulo text="Sokoban" />
+            </div>
+            <div className="whitespace"></div>
         </section>
     );
 }
