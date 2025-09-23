@@ -3,15 +3,27 @@ import React from "react";
 import Texto from "../../components/Texto";
 import Subtitulo from "../../components/Subtitulo";
 import { useTranslation } from "react-i18next";
+import Titulo from "@/components/Titulo";
+import Image from "next/image";
 
 export default function ProjectsPage() {
     const { t } = useTranslation("translation");
 
     return (
-        <section id="projects" className="">
-            <div id ="intro-proyectos" className="proyects-desc">
+        <section id="projects">
+            <div id="intro-projects" className="proyects-desc">
                 <Subtitulo text={t("projects.titulo")} />
-                <Texto text={t("projects.intro")} />
+                <Texto text={t("projects.intro")} customStyle="texto-formato" />
+            </div>
+            <div className="whitespace"></div>
+            <div id="project-image-1" className="image-project-1">
+                <Titulo text="Yggdra" />
+                <Image
+                    src="/assets/yggdra-captura.jpg"
+                    alt="Yggdra"
+                    width={720}
+                    height={405}
+                />
             </div>
         </section>
     );

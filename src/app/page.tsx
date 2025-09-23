@@ -33,7 +33,7 @@ export default function Home() {
           style={{ color: "var(--color-blanco)" }}
         >
           <Subtitulo text={t('about.about')} customStyle={"margen-grande"} />
-          <Texto text={t('about.descripcion')} customStyle={"margen-grande"} />
+          <Texto text={t('about.descripcion')} customStyle={"margen-grande texto-formato"} />
         </div>
       </section>
 

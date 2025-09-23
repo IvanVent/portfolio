@@ -1,3 +1,4 @@
+
 /*Estilos para la pagina de about*/
 
 
@@ -12,10 +13,19 @@
   align-items: flex-start;
   justify-content: center;
   min-height: 70vh;
+  max-width: 800px;
   margin-left: 5rem;
   margin-right: 5rem;
 }
 
+.image-project-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-items: center;
+  gap: 6rem;
+}
 
 
 /*------------------------------------*/
@@ -95,6 +105,11 @@
   margin-right: 3rem;
 }
 
+.whitespace {
+  height: 100px;
+  width: 100%;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -117,6 +132,10 @@ a:focus {
 @tailwind components;
 @tailwind utilities;
 
+.texto-formato {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .navbar-fija {
   position: fixed;
