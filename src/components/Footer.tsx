@@ -8,7 +8,7 @@ export default function Footer() {
         <Texto text="Tienes un proyecto interesante? Vamos a trabajar juntos!" />
       </div>
       <hr className="hr" />
-      <div className="info">
+      <div className="info margen-negativo-top">
         <div id="Redes" className="redes">
           <Texto text="Sigueme!" customStyle="texto-secundario" />
           <div className="links ">

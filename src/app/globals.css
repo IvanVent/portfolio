@@ -1,9 +1,29 @@
+/*Estilos para la pagina de about*/
 
+
+
+/*------------------------------------*/
+
+/*Estilos para la pagina de proyectos*/
+
+.proyects-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 70vh;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+
+
+/*------------------------------------*/
 /*Estilos para el footer*/
 
 .footer {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 .margen-negativo-top {
@@ -64,12 +84,15 @@
   margin-right: -15px;
   margin-left: -15px;
 }
+/*------------------------------------*/
 
 /* Wrapper general para páginas */
 .wrapper {
   display: block;
   box-sizing: border-box;
   unicode-bidi: isolate;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 ul {
@@ -87,7 +110,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
-  color: var(--color-oro-dark, #f8312f);
+  color: var(--color-oro-dark, var(--color-rojo));
 }
 
 @tailwind base;
@@ -138,6 +161,7 @@ a:focus {
   --color-negro: #0f0f0f;
   --color-gris: rgba(255, 255, 255, 0.2);
   --color-blanco: #ffffff;
+  --color-rojo: #f8312f;
   --background: var(--color-negro);
   --foreground: var(--color-blanco);
   --font-mono: 'JetBrains Mono', 'Fira Mono', 'Roboto Mono', 'Menlo', 'Consolas', 'monospace';
