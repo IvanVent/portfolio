@@ -6,6 +6,14 @@
     },
     "projects": {
         "titulo": "Projects",
-        "intro": "I have worked on various mini-projects such as a small game in Unity, an application to support caregivers of vulnerable elderly people, and a recreation of the classic Sokoban. Each of these projects has taught me something new and helped me grow as a developer."
+        "intro": "I have worked on various mini-projects such as a small game in Unity, an application to support caregivers of vulnerable elderly people, or a recreation of the classic Sokoban, among others. Each of these projects has taught me something new and helped me grow as a developer."
+    },
+    "contact": {
+        "titulo": "Say hello",
+        "intro": "Do you want to collaborate and work on some projects? Feel free to contact me by leaving your questions and comments below. Thank you for taking the time to be here. Have a great day!",
+        "nombre": "Name:",
+        "correo": "Email:",
+        "mensaje": "Message:",
+        "enviar": "Send message"
     }
 }

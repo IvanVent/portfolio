@@ -11,7 +11,7 @@ export default function ProjectsPage() {
 
     return (
         <section id="projects">
-            <div id="intro-projects" className="proyects-desc">
+            <div id="intro-projects" className="section-intro">
                 <Subtitulo text={t("projects.titulo")} />
                 <Texto text={t("projects.intro")} customStyle="texto-formato" />
             </div>
@@ -34,6 +34,16 @@ export default function ProjectsPage() {
                     height={469}
                 />
                 <Titulo text="Sokoban" />
+            </div>
+            <div className="whitespace"></div>
+            <div id="project-image-3" className="image-project-1">
+                <Titulo text="MovieVerse" />
+                <Image
+                    src="/assets/yggdra-captura.jpg"
+                    alt="MovieVerse"
+                    width={405}
+                    height={405}
+                />
             </div>
             <div className="whitespace"></div>
         </section>

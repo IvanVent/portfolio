@@ -6,6 +6,14 @@
     },
     "projects": {
         "titulo": "Proyectos",
-        "intro": "He trabajado en distintos mini proyectos como un pequeño juego en Unity, una aplicación para apoyar a cuidadores de personas mayores vulnerables y una recreación del clásico Sokoban. Cada uno me ha enseñado algo nuevo y me ha ayudado a crecer como desarrollador."
+        "intro": "He trabajado en distintos mini proyectos como un pequeño juego en Unity, una aplicación para apoyar a cuidadores de personas mayores vulnerables o una recreación del clásico Sokoban, entre otros. Cada uno me ha enseñado algo nuevo y me ha ayudado a crecer como desarrollador."
+    },
+    "contact":{
+        "titulo": "Saludame",
+        "intro": "¿Quieres colaborar y trabajar en algunos proyectos? No dudes en ponerte en contacto conmigo dejando tus consultas y comentarios abajo. Gracias por tomarte el tiempo de estar aquí. ¡Que tengas un gran día!",
+        "nombre": "Nombre:",
+        "correo": "Correo:",
+        "mensaje": "Mensaje:",
+        "enviar": "Enviar mensaje"
     }
 }
