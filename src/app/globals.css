@@ -1,8 +1,40 @@
+/*Estilos para la pagina de contacto*/
+
+/* Botón de enviar mensaje */
+.boton-enviar {
+  background: var(--color-negro);
+  color: var(--color-blanco);
+  padding: 1.5rem 1.5rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 250px;
+  border-top: 2px solid var(--color-gris);
+  border-left: 2px solid var(--color-gris);
+  border-bottom: 2px solid var(--color-negro-total);
+  border-right: 2px solid var(--color-negro-total);
+}
+
+.boton-enviar:hover,
+.boton-enviar:focus {
+  background: var(--color-rojo);
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  max-width: 950px;
+  gap: 1.5rem;
+}
+
 .input-linea::placeholder {
   color: var(--foreground);
   font-family: var(--font-mono);
   opacity: 0.7;
 }
+
 /* Input transparente con solo línea inferior */
 .input-linea {
   background: transparent;
@@ -15,16 +47,9 @@
   transition: border-color 0.2s;
   border-radius: 0;
 }
+
 .input-linea:focus {
   border-bottom: 2.5px solid var(--color-rojo);
-}
-/*Estilos para la pagina de contacto*/
-
-.form-style {
-  display: flex;
-  flex-direction: column;
-  max-width: 950px;
-  gap : 1.5rem;
 }
 
 /*------------------------------------*/
@@ -94,7 +119,8 @@
   display: flex;
   flex-direction: column;
 }
-.info{
+
+.info {
   display: flex;
   flex-direction: row;
   margin: 2.5rem;
@@ -117,12 +143,13 @@
   border: none;
 }
 
-.row{
-  display: flex; 
+.row {
+  display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 /*------------------------------------*/
 
 /* Wrapper general para páginas */
@@ -218,7 +245,9 @@ a:focus {
 
 :root {
   --color-negro: #0f0f0f;
+  --color-negro-total: #000000;
   --color-gris: rgba(255, 255, 255, 0.2);
+  --color-gris-oscuro: #343a40;
   --color-blanco: #ffffff;
   --color-rojo: #f8312f;
   --background: var(--color-negro);

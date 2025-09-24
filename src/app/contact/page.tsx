@@ -71,7 +71,7 @@ export default function ContactPage() {
                     rows={5}
                     className="texto input-linea"
                 />
-                <button type="submit" style={{ background: "#f8312f", color: "white", padding: "0.75rem", border: "none", borderRadius: 8, fontWeight: 600, cursor: "pointer" }}>
+                <button type="submit" className="boton-enviar">
                     {t("contact.enviar")}
                 </button>
                 {status && <div style={{ marginTop: 8 }}>{status}</div>}
