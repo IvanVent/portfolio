@@ -40,7 +40,7 @@ export default function ContactPage() {
     return (
         <section id="contact">
             <div id="intro-contact" className="section-intro">
-                <Subtitulo text={t("contact.titulo")} />
+                <Subtitulo text={t("contact.titulo") + " 👋"} />
                 <Texto text={t("contact.intro")} customStyle="texto-formato" />
             </div>
             <form onSubmit={handleSubmit} className="form-style" id="form">

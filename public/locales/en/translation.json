@@ -15,5 +15,10 @@
         "correo": "Email:",
         "mensaje": "Message:",
         "enviar": "Send message"
+    },
+    "footer": {
+        "trabajar-juntos": "¿Tienes un proyecto interesante? ¡Vamos a trabajar juntos!",
+        "sigueme": "¡Sígueme!",
+        "contactame": "Contáctame"
     }
 }
