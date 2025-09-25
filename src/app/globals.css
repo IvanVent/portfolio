@@ -1,7 +1,7 @@
 /*Estilos para la pagina de contacto*/
 
 /* Botón de enviar mensaje */
-.boton-enviar {
+.boton-style {
   background: var(--color-negro);
   color: var(--color-blanco);
   padding: 1.5rem 1.5rem;
@@ -18,8 +18,8 @@
   margin-top: 20px;
 }
 
-.boton-enviar:hover,
-.boton-enviar:focus {
+.boton-style:hover,
+.boton-style:focus {
   background: var(--color-rojo);
 }
 
@@ -61,6 +61,11 @@
 
 /*Estilos para la pagina de about*/
 
+.boton-about{
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
 
 
 /*------------------------------------*/
@@ -83,6 +88,14 @@
   align-items: flex-end;
   align-items: center;
   gap: 6rem;
+}
+
+.movieverse-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem; /* Ajusta este valor */
 }
 
 

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Texto from "../../components/Texto";
 import Subtitulo from "../../components/Subtitulo";
 import { useTranslation } from "react-i18next";
+import CustomButton from "@/components/CustomButton";
 
 
 export default function ContactPage() {
@@ -71,9 +72,13 @@ export default function ContactPage() {
                     rows={5}
                     className="texto input-linea"
                 />
-                <button type="submit" className="boton-enviar">
+                {/* <button type="submit" className="boton-enviar">
                     {t("contact.enviar")}
-                </button>
+                </button> */}
+                <CustomButton
+                    text={t("contact.enviar")}
+                    type="submit"
+                />
                 {status && <div style={{ marginTop: 8 }}>{status}</div>}
             </form>
             <div className="whitespace"></div>

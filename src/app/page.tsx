@@ -6,9 +6,19 @@ import Image from "next/image";
 import Texto from "@/components/Texto";
 import { useTranslation } from "react-i18next";
 import '../i18n';
+import CustomButton from "@/components/CustomButton";
 
 export default function Home() {
+
   const { t } = useTranslation();
+
+  const descargarCV = () => {
+    const link = document.createElement('a');
+    link.href = '/assets/Ivan_Ventura_CV.pdf';
+    link.download = 'CV_Ivan_Ventura.pdf';
+    link.click();
+  };
+
   return (
     <main className="flex flex-col w-full">
 
@@ -32,8 +42,21 @@ export default function Home() {
           className="bg-white bg-opacity-80 border-2 border-white rounded-lg p-8 shadow-lg max-w-xl margen-x-xxl margen-bottom-xxl"
           style={{ color: "var(--color-blanco)" }}
         >
-          <Subtitulo text={t('about.about')} customStyle={"margen-grande"} />
-          <Texto text={t('about.descripcion')} customStyle={"margen-grande texto-formato"} />
+          <Subtitulo
+            text={t('about.about')}
+            customStyle={"margen-grande"}
+          />
+          <Texto
+            text={t('about.descripcion')}
+            customStyle={"margen-grande texto-formato"}
+          />
+        </div>
+        <div className="boton-about">
+          <CustomButton
+            text={t('about.descargarCV')}
+            type="button"
+            onClick={descargarCV}
+          />
         </div>
       </section>
 
@@ -48,7 +71,7 @@ export default function Home() {
           <li className="bg-white px-4 py-2 rounded shadow">Node.js</li>
         </ul>
       </section> */}
-
+      <div className="whitespace"></div>
     </main>
   );
 }

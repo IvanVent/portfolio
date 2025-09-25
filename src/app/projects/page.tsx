@@ -38,12 +38,26 @@ export default function ProjectsPage() {
             <div className="whitespace"></div>
             <div id="project-image-3" className="image-project-1">
                 <Titulo text="MovieVerse" />
-                <Image
-                    src="/assets/yggdra-captura.jpg"
-                    alt="MovieVerse"
-                    width={405}
-                    height={405}
-                />
+                <div className="movieverse-images">
+                    <Image
+                        src="/assets/movieVerse_1.png"
+                        alt="MovieVerse"
+                        width={150}
+                        height={342}
+                    />
+                    <Image
+                        src="/assets/movieVerse_2.png"
+                        alt="MovieVerse"
+                        width={150}
+                        height={342}
+                    />
+                    <Image
+                        src="/assets/movieVerse_3.png"
+                        alt="MovieVerse"
+                        width={150}
+                        height={342}
+                    />
+                </div>
             </div>
             <div className="whitespace"></div>
         </section>

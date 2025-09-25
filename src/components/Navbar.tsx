@@ -15,10 +15,7 @@ export default function Navbar() {
         {/* Secciones alineadas a la derecha */}
         <div id="secciones">
           <ul className="flex flex-row">
-            <li className="margen-right-med">
-              <Link href="/miCV">Mi CV</Link>
-            </li>
-            <li className="margen-right-med">
+            <li className="margen-right-grande">
               <Link href="/projects">Proyectos</Link>
             </li>
             <li className="margen-right-grande">
