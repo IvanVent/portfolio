@@ -2,8 +2,11 @@
 import Link from "next/link";
 import '@/app/globals.css';
 import { useNavbarAnimation } from "../hooks/useScrollAnimation";
+import LanguageSelector from "./LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation("translation");
   useNavbarAnimation();
   return (
     <nav className="navbar-fija">
@@ -15,15 +18,18 @@ export default function Navbar() {
           </Link>
         </div>
         {/* Secciones alineadas a la derecha */}
-        <div id="secciones">
+        <div id="secciones" className="flex flex-row items-center">
           <ul className="flex flex-row">
             <li className="margen-right-grande navbar-item">
-              <Link href="/projects">Proyectos</Link>
+              <Link href="/projects">{t("navbar.projects")}</Link>
             </li>
             <li className="margen-right-grande navbar-item">
-              <Link href="/contact">Contacto</Link>
+              <Link href="/contact">{t("navbar.contact")}</Link>
             </li>
           </ul>
+          <div className="margen-right-grande">
+            <LanguageSelector />
+          </div>
         </div>
       </div>
     </nav>

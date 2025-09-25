@@ -17,6 +17,10 @@
         "mensaje": "Mensaje:",
         "enviar": "Enviar mensaje"
     },
+    "navbar": {
+        "projects": "Proyectos",
+        "contact": "Contacto"
+    },
     "footer": {
         "trabajar-juntos": "¿Tienes un proyecto interesante? ¡Vamos a trabajar juntos!",
         "sigueme": "¡Sígueme!",
