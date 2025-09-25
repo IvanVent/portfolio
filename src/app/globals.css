@@ -390,6 +390,41 @@ body {
   margin-right: 6rem !important;
 }
 
+/* Animaciones de scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Estado inicial - elementos ocultos */
+.animate-element {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Clases para navbar */
+.navbar-item {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .margen-x-xxl {
   margin-left: 6rem !important;
   margin-right: 6rem !important;

@@ -4,6 +4,7 @@ import Texto from "../../components/Texto";
 import Subtitulo from "../../components/Subtitulo";
 import { useTranslation } from "react-i18next";
 import CustomButton from "@/components/CustomButton";
+import { useScrollAnimation } from "../../hooks/useScrollAnimation";
 
 
 export default function ContactPage() {
@@ -13,6 +14,8 @@ export default function ContactPage() {
     const [status, setStatus] = useState("");
 
     const { t } = useTranslation("translation");
+    
+    useScrollAnimation();
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setState({ ...state, [e.target.name]: e.target.value });
@@ -40,47 +43,51 @@ export default function ContactPage() {
 
     return (
         <section id="contact">
-            <div id="intro-contact" className="section-intro">
-                <Subtitulo text={t("contact.titulo") + " 👋"} />
-                <Texto text={t("contact.intro")} customStyle="texto-formato" />
+            <div className="animate-element">
+                <div id="intro-contact" className="section-intro">
+                    <Subtitulo text={t("contact.titulo") + " 👋"} />
+                    <Texto text={t("contact.intro")} customStyle="texto-formato" />
+                </div>
             </div>
-            <form onSubmit={handleSubmit} className="form-style" id="form">
-                <input
-                    type="text"
-                    name="name"
-                    placeholder={t("contact.nombre")}
-                    value={state.name}
-                    onChange={handleChange}
-                    required
-                    className="texto input-linea"
-                />
-                <input
-                    type="email"
-                    name="email"
-                    placeholder={t("contact.correo")}
-                    value={state.email}
-                    onChange={handleChange}
-                    required
-                    className="texto input-linea"
-                />
-                <textarea
-                    name="message"
-                    placeholder={t("contact.mensaje")}
-                    value={state.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="texto input-linea"
-                />
-                {/* <button type="submit" className="boton-enviar">
-                    {t("contact.enviar")}
-                </button> */}
-                <CustomButton
-                    text={t("contact.enviar")}
-                    type="submit"
-                />
-                {status && <div style={{ marginTop: 8 }}>{status}</div>}
-            </form>
+            <div className="animate-element">
+                <form onSubmit={handleSubmit} className="form-style" id="form">
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder={t("contact.nombre")}
+                        value={state.name}
+                        onChange={handleChange}
+                        required
+                        className="texto input-linea"
+                    />
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder={t("contact.correo")}
+                        value={state.email}
+                        onChange={handleChange}
+                        required
+                        className="texto input-linea"
+                    />
+                    <textarea
+                        name="message"
+                        placeholder={t("contact.mensaje")}
+                        value={state.message}
+                        onChange={handleChange}
+                        required
+                        rows={5}
+                        className="texto input-linea"
+                    />
+                    {/* <button type="submit" className="boton-enviar">
+                        {t("contact.enviar")}
+                    </button> */}
+                    <CustomButton
+                        text={t("contact.enviar")}
+                        type="submit"
+                    />
+                    {status && <div style={{ marginTop: 8 }}>{status}</div>}
+                </form>
+            </div>
             <div className="whitespace"></div>
         </section>
     );
