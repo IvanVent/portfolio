@@ -1,3 +1,32 @@
+/*Estilos para la pagina de about*/
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2.5rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
+
+.aboutme-border {
+  border: 2px solid var(--color-blanco);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-about {
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+/*------------------------------------*/
+
+
 /*Estilos para la pagina de contacto*/
 
 /* Botón de enviar mensaje */
@@ -59,17 +88,6 @@
 /*------------------------------------*/
 
 
-/*Estilos para la pagina de about*/
-
-.boton-about{
-  display: flex;
-  justify-content: center;
-  margin-top: -30px;
-}
-
-
-/*------------------------------------*/
-
 /*Estilos para la pagina de proyectos*/
 
 .image-project-1 {
@@ -95,9 +113,9 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem; /* Ajusta este valor */
+  gap: 2rem;
+  /* Ajusta este valor */
 }
-
 
 /*------------------------------------*/
 /*Estilos para el footer*/
@@ -107,9 +125,6 @@
   margin-right: 6rem;
 }
 
-.margen-negativo-top {
-  margin-top: -10px !important;
-}
 
 .texto-secundario {
   font-size: 15px;
@@ -169,6 +184,51 @@
 
 /*------------------------------------*/
 
+/*Estilos para el navbar*/
+
+.navbar-fija {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.disposition-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Espacio para que el contenido no quede oculto tras la navbar */
+.navbar-espacio {
+  padding-top: 64px;
+}
+
+.navbar-item {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*------------------------------------*/
+
 /* Wrapper general para páginas */
 .wrapper {
   display: block;
@@ -216,29 +276,7 @@ a:focus {
 @tailwind components;
 @tailwind utilities;
 
-.texto-formato {
-  text-align: justify;
-  text-justify: inter-word;
-}
 
-.navbar-fija {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: var(--background);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-/* Espacio para que el contenido no quede oculto tras la navbar */
-.navbar-espacio {
-  padding-top: 64px;
-  /* Ajusta este valor a la altura real de tu navbar */
-}
 
 /* Estilos personalizados para tipografía */
 .titulo {
@@ -259,6 +297,14 @@ a:focus {
   line-height: 1.7;
   white-space: pre-line;
 }
+
+.texto-formato {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ------------------------------- */
+
 
 :root {
   --color-negro: #0f0f0f;
@@ -390,12 +436,27 @@ body {
   margin-right: 6rem !important;
 }
 
+.margen-x-xxl {
+  margin-left: 6rem !important;
+  margin-right: 6rem !important;
+}
+
+.margen-y-xxl {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.margen-negativo-top {
+  margin-top: -10px !important;
+}
+
 /* Animaciones de scroll */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(60px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -407,6 +468,7 @@ body {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -417,22 +479,6 @@ body {
 .animate-element {
   visibility: hidden;
   opacity: 0;
-}
-
-/* Clases para navbar */
-.navbar-item {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.margen-x-xxl {
-  margin-left: 6rem !important;
-  margin-right: 6rem !important;
-}
-
-.margen-y-xxl {
-  margin-top: 6rem !important;
-  margin-bottom: 6rem !important;
 }
 
 /* Language Selector Styles */
@@ -487,6 +533,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
