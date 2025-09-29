@@ -125,9 +125,6 @@
   margin-right: 6rem;
 }
 
-.margen-negativo-top {
-  margin-top: -10px !important;
-}
 
 .texto-secundario {
   font-size: 15px;
@@ -279,11 +276,6 @@ a:focus {
 @tailwind components;
 @tailwind utilities;
 
-.texto-formato {
-  text-align: justify;
-  text-justify: inter-word;
-}
-
 
 
 /* Estilos personalizados para tipografía */
@@ -305,6 +297,14 @@ a:focus {
   line-height: 1.7;
   white-space: pre-line;
 }
+
+.texto-formato {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ------------------------------- */
+
 
 :root {
   --color-negro: #0f0f0f;
@@ -444,6 +444,10 @@ body {
 .margen-y-xxl {
   margin-top: 6rem !important;
   margin-bottom: 6rem !important;
+}
+
+.margen-negativo-top {
+  margin-top: -10px !important;
 }
 
 /* Animaciones de scroll */

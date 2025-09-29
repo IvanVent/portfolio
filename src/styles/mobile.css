@@ -6,18 +6,30 @@
 /* Media query principal para móvil */
 @media (max-width: 768px) {
 
-    /*wrapper - MÓVIL*/
+    /*wrapper y estilos generales - MÓVIL*/
     .wrapper {
         margin-left: 1rem !important;
         margin-right: 1rem !important;
         padding: 0 0.5rem;
     }
 
+    .section-intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important; /* Centrado en móvil */
+        justify-content: center;
+        min-height: 60vh !important; /* Reducido para móvil */
+        max-width: 100% !important; /* Ancho completo en móvil */
+        margin-left: 1rem !important; /* Márgenes apropiados para móvil */
+        margin-right: 1rem !important;
+        padding: 1rem !important; /* Padding interno */
+        text-align: center !important; /* Texto centrado */
+    }
+
     /*Estilos para la pagina de about - MÓVIL*/
 
     .hero-section {
         flex-direction: column !important;
-        min-height: auto !important;
         padding: 2rem 1rem !important;
         gap: 2rem !important;
     }
@@ -40,22 +52,100 @@
         margin-top: 1rem !important;
     }
 
-    /* Ajustes de márgenes para móvil */
-    .margen-left-grande {
-        margin-left: 0 !important;
-        text-align: center !important;
+    /*------------------------------------*/
+
+    /*Estilos para la página de projects - MÓVIL*/
+
+    .image-project-1 {
+        flex-direction: column !important;
+        /* Layout vertical */
+        align-items: center !important;
+        /* Centrado - CLAVE para evitar problemas de navbar */
+        gap: 2rem !important;
+        /* Reducido de 6rem */
+        margin: 2rem 1rem !important;
+        /* Márgenes apropiados */
     }
 
-    .margen-x-xxl {
-        margin-left: 1rem !important;
-        margin-right: 1rem !important;
+    .image-project-2 {
+        flex-direction: column !important;
+        /* Layout vertical */
+        align-items: center !important;
+        /* Centrado - CLAVE para evitar problemas de navbar */
+        gap: 2rem !important;
+        /* Reducido de 6rem */
+        margin: 2rem 1rem !important;
+        /* Márgenes apropiados */
     }
 
-    .margen-bottom-xxl {
-        margin-bottom: 2rem !important;
+    .movieverse-images {
+        flex-direction: column !important;
+        /* Columna en móvil para las 3 imágenes */
+        align-items: center !important;
+        /* Centrado */
+        gap: 1rem !important;
+        /* Espaciado más compacto */
+        margin: 1rem !important;
+    }
+
+    /* Ajustar tamaños de imágenes para móvil */
+    .image-project-1 img,
+    .image-project-2 img {
+        max-width: 100% !important;
+        height: auto !important;
+        width: 90% !important;
+        /* Ocupar la mayoría del ancho disponible */
+    }
+
+    .movieverse-images img {
+        max-width: 80% !important;
+        /* Más pequeñas para que se vean bien las 3 */
+        height: auto !important;
+        width: auto !important;
     }
 
     /*------------------------------------*/
+
+    /*Estilos para el navbar - MÓVIL*/
+
+    .navbar-fija {
+        padding-top: 1rem !important;
+        /* Reducido de 2rem */
+        padding-bottom: 1rem !important;
+        padding-left: 1rem !important;
+        /* Añadido para móvil */
+        padding-right: 1rem !important;
+    }
+
+    .disposition-navbar {
+        justify-content: space-between !important;
+        gap: 1rem !important;
+        /* Espaciado entre elementos */
+    }
+
+    .section-style {
+        gap: 0.5rem !important;
+        /* Espaciado más compacto */
+    }
+
+    .project-contact {
+        gap: 1rem !important;
+        /* Espaciado entre enlaces */
+    }
+
+    /* Ajuste del espaciado para navbar más compacta */
+    .navbar-espacio {
+        padding-top: 80px !important;
+        /* Ajustado para padding reducido */
+    }
+
+    /* Language selector más compacto en móvil */
+    .language-selector {
+        margin-left: 0.5rem !important;
+    }
+
+    /*------------------------------------*/
+
 
     /*Estilos para el footer - MÓVIL*/
 
@@ -67,7 +157,7 @@
 
     .links {
         flex-direction: column !important;
-        gap: 1rem !important;
+        gap: 3.5px !important;
         align-items: center !important;
     }
 
@@ -85,13 +175,12 @@
     .info {
         flex-direction: column !important;
         margin: 1rem !important;
-        gap: 1.5rem !important;
+        gap: 10px !important;
         text-align: center !important;
     }
 
     .colaborar {
         text-align: center !important;
-        margin: 1rem !important;
     }
 
     .hr {
@@ -102,6 +191,42 @@
     .texto-secundario {
         font-size: 14px !important;
         text-align: center !important;
+    }
+
+    /*------------------------------------*/
+
+    /* Tipografía optimizada para MÓVIL */
+    .titulo {
+        font-size: 32px !important;
+        /* Reducido de 50px */
+        font-weight: 700;
+        letter-spacing: -0.3px;
+        /* Menos espaciado negativo */
+        margin-bottom: 0.5em;
+        line-height: 1.2;
+        /* Mejor legibilidad en móvil */
+        text-align: center;
+        /* Centrado en móvil */
+    }
+
+    .subtitulo {
+        font-size: 20px !important;
+        /* Reducido de 28px */
+        font-weight: 600;
+        margin-bottom: 0.5em;
+        line-height: 1.3;
+        text-align: center;
+        /* Centrado en móvil */
+    }
+
+    .texto {
+        font-size: 16px !important;
+        /* Reducido de 18px */
+        line-height: 1.6;
+        /* Más compacto pero legible */
+        white-space: pre-line;
+        text-align: left;
+        /* Justificado para párrafos */
     }
 
     /*------------------------------------*/
@@ -202,7 +327,6 @@
         margin-bottom: 1.5rem !important;
     }
 
-    /* Márgenes XXL muy reducidos para móvil */
     .margen-xxl {
         margin: 2rem !important;
         /* Reducido de 6rem */
@@ -227,13 +351,20 @@
     }
 
     .margen-x-xxl {
-        margin-left: 1rem !important; /* Máximo lateral para móvil */
+        margin-left: 1rem !important;
+        /* Máximo lateral para móvil */
         margin-right: 1rem !important;
     }
 
     .margen-y-xxl {
-        margin-top: 2rem !important; /* Reducido de 6rem */
+        margin-top: 2rem !important;
+        /* Reducido de 6rem */
         margin-bottom: 2rem !important;
+    }
+
+    .margen-negativo-top {
+        margin-top: -5px !important;
+        /* Reducido de -10px para móvil */
     }
 
     /*------------------------------------*/
