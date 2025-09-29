@@ -18,7 +18,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.boton-about{
+.boton-about {
   display: flex;
   justify-content: center;
   margin-top: -30px;
@@ -113,7 +113,8 @@
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  gap: 2rem; /* Ajusta este valor */
+  gap: 2rem;
+  /* Ajusta este valor */
 }
 
 /*------------------------------------*/
@@ -186,6 +187,51 @@
 
 /*------------------------------------*/
 
+/*Estilos para el navbar*/
+
+.navbar-fija {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.disposition-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-style {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.project-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Espacio para que el contenido no quede oculto tras la navbar */
+.navbar-espacio {
+  padding-top: 64px;
+}
+
+.navbar-item {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/*------------------------------------*/
+
 /* Wrapper general para páginas */
 .wrapper {
   display: block;
@@ -238,24 +284,7 @@ a:focus {
   text-justify: inter-word;
 }
 
-.navbar-fija {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background: var(--background);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
 
-/* Espacio para que el contenido no quede oculto tras la navbar */
-.navbar-espacio {
-  padding-top: 64px;
-  /* Ajusta este valor a la altura real de tu navbar */
-}
 
 /* Estilos personalizados para tipografía */
 .titulo {
@@ -407,12 +436,23 @@ body {
   margin-right: 6rem !important;
 }
 
+.margen-x-xxl {
+  margin-left: 6rem !important;
+  margin-right: 6rem !important;
+}
+
+.margen-y-xxl {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
 /* Animaciones de scroll */
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(60px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -424,6 +464,7 @@ body {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -434,22 +475,6 @@ body {
 .animate-element {
   visibility: hidden;
   opacity: 0;
-}
-
-/* Clases para navbar */
-.navbar-item {
-  visibility: hidden;
-  opacity: 0;
-}
-
-.margen-x-xxl {
-  margin-left: 6rem !important;
-  margin-right: 6rem !important;
-}
-
-.margen-y-xxl {
-  margin-top: 6rem !important;
-  margin-bottom: 6rem !important;
 }
 
 /* Language Selector Styles */
@@ -504,6 +529,7 @@ body {
     opacity: 0;
     transform: translateY(-10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

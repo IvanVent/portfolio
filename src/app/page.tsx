@@ -23,8 +23,7 @@ export default function Home() {
   useScrollAnimation();
 
   return (
-    <main className="flex flex-col w-full">
-
+    <main>
       {/* Sección Presentación (About) */}
       <section id="about">
         <div className="animate-element">

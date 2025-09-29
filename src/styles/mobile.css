@@ -105,6 +105,139 @@
     }
 
     /*------------------------------------*/
+
+    /* Márgenes optimizados para MÓVIL */
+    .margen-peq {
+        margin: 0.25rem !important;
+        /* 4px - Más compacto */
+    }
+
+    .margen-med {
+        margin: 0.75rem !important;
+        /* 12px - Reducido de 20px */
+    }
+
+    .margen-grande {
+        margin: 1.5rem !important;
+        /* 24px - Reducido de 40px */
+    }
+
+    .margen-top-peq {
+        margin-top: 0.25rem !important;
+    }
+
+    .margen-top-med {
+        margin-top: 0.75rem !important;
+    }
+
+    .margen-top-grande {
+        margin-top: 1.5rem !important;
+    }
+
+    .margen-right-peq {
+        margin-right: 0.25rem !important;
+    }
+
+    .margen-right-med {
+        margin-right: 0.75rem !important;
+    }
+
+    .margen-right-grande {
+        margin-right: 1rem !important;
+        /* Máximo 1rem laterales */
+    }
+
+    .margen-bottom-peq {
+        margin-bottom: 0.25rem !important;
+    }
+
+    .margen-bottom-med {
+        margin-bottom: 0.75rem !important;
+    }
+
+    .margen-bottom-grande {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .margen-left-peq {
+        margin-left: 0.25rem !important;
+    }
+
+    .margen-left-med {
+        margin-left: 0.75rem !important;
+    }
+
+    .margen-left-grande {
+        margin-left: 1rem !important;
+        /* Máximo 1rem laterales */
+    }
+
+    .margen-x-peq {
+        margin-left: 0.25rem !important;
+        margin-right: 0.25rem !important;
+    }
+
+    .margen-x-med {
+        margin-left: 0.75rem !important;
+        margin-right: 0.75rem !important;
+    }
+
+    .margen-x-grande {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+
+    .margen-y-peq {
+        margin-top: 0.25rem !important;
+        margin-bottom: 0.25rem !important;
+    }
+
+    .margen-y-med {
+        margin-top: 0.75rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+
+    .margen-y-grande {
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Márgenes XXL muy reducidos para móvil */
+    .margen-xxl {
+        margin: 2rem !important;
+        /* Reducido de 6rem */
+    }
+
+    .margen-top-xxl {
+        margin-top: 2rem !important;
+    }
+
+    .margen-bottom-xxl {
+        margin-bottom: 2rem !important;
+    }
+
+    .margen-left-xxl {
+        margin-left: 1rem !important;
+        /* Máximo lateral */
+    }
+
+    .margen-right-xxl {
+        margin-right: 1rem !important;
+        /* Máximo lateral */
+    }
+
+    .margen-x-xxl {
+        margin-left: 1rem !important; /* Máximo lateral para móvil */
+        margin-right: 1rem !important;
+    }
+
+    .margen-y-xxl {
+        margin-top: 2rem !important; /* Reducido de 6rem */
+        margin-bottom: 2rem !important;
+    }
+
+    /*------------------------------------*/
+
 }
 
 /* Media query para móviles muy pequeños */

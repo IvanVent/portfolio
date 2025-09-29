@@ -10,7 +10,7 @@ export default function Navbar() {
   useNavbarAnimation();
   return (
     <nav className="navbar-fija">
-      <div className="flex flex-row items-center justify-between margen-left-grande">
+      <div className="disposition-navbar margen-left-grande">
         {/* Nombre a la izquierda */}
         <div id="nombre" className="navbar-item">
           <Link href="/">
@@ -18,8 +18,8 @@ export default function Navbar() {
           </Link>
         </div>
         {/* Secciones alineadas a la derecha */}
-        <div id="secciones" className="flex flex-row items-center">
-          <ul className="flex flex-row">
+        <div id="secciones" className="section-style">
+          <ul className="project-contact">
             <li className="margen-right-grande navbar-item">
               <Link href="/projects">{t("navbar.projects")}</Link>
             </li>
