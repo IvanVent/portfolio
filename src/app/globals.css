@@ -1,3 +1,32 @@
+/*Estilos para la pagina de about*/
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2.5rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+}
+
+.aboutme-border {
+  border: 2px solid var(--color-blanco);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton-about{
+  display: flex;
+  justify-content: center;
+  margin-top: -30px;
+}
+
+/*------------------------------------*/
+
+
 /*Estilos para la pagina de contacto*/
 
 /* Botón de enviar mensaje */
@@ -59,17 +88,6 @@
 /*------------------------------------*/
 
 
-/*Estilos para la pagina de about*/
-
-.boton-about{
-  display: flex;
-  justify-content: center;
-  margin-top: -30px;
-}
-
-
-/*------------------------------------*/
-
 /*Estilos para la pagina de proyectos*/
 
 .image-project-1 {
@@ -97,7 +115,6 @@
   align-items: center;
   gap: 2rem; /* Ajusta este valor */
 }
-
 
 /*------------------------------------*/
 /*Estilos para el footer*/

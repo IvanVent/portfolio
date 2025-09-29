@@ -1,0 +1,115 @@
+/* ================================
+   MOBILE STYLES - Portfolio Ivan
+   Breakpoint: max-width: 768px
+   ================================ */
+
+/* Media query principal para móvil */
+@media (max-width: 768px) {
+
+    /*wrapper - MÓVIL*/
+    .wrapper {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+        padding: 0 0.5rem;
+    }
+
+    /*Estilos para la pagina de about - MÓVIL*/
+
+    .hero-section {
+        flex-direction: column !important;
+        min-height: auto !important;
+        padding: 2rem 1rem !important;
+        gap: 2rem !important;
+    }
+
+    .profile-image {
+        width: 200px !important;
+        height: 200px !important;
+        margin: 0 auto !important;
+    }
+
+    .aboutme-border {
+        margin: 1rem !important;
+        padding: 1.5rem !important;
+        max-width: 100% !important;
+        border-radius: 12px !important;
+    }
+
+    .boton-about {
+        margin: 2rem 1rem !important;
+        margin-top: 1rem !important;
+    }
+
+    /* Ajustes de márgenes para móvil */
+    .margen-left-grande {
+        margin-left: 0 !important;
+        text-align: center !important;
+    }
+
+    .margen-x-xxl {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+
+    .margen-bottom-xxl {
+        margin-bottom: 2rem !important;
+    }
+
+    /*------------------------------------*/
+
+    /*Estilos para el footer - MÓVIL*/
+
+    .footer {
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+        padding: 1rem !important;
+    }
+
+    .links {
+        flex-direction: column !important;
+        gap: 1rem !important;
+        align-items: center !important;
+    }
+
+    .redes {
+        text-align: center !important;
+        align-items: center !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .contacto {
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .info {
+        flex-direction: column !important;
+        margin: 1rem !important;
+        gap: 1.5rem !important;
+        text-align: center !important;
+    }
+
+    .colaborar {
+        text-align: center !important;
+        margin: 1rem !important;
+    }
+
+    .hr {
+        width: 90% !important;
+        margin: 1.5rem auto !important;
+    }
+
+    .texto-secundario {
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+
+    /*------------------------------------*/
+}
+
+/* Media query para móviles muy pequeños */
+@media (max-width: 480px) {
+
+    /* Estilos para pantallas muy pequeñas */
+
+}
