@@ -16,14 +16,20 @@
     .section-intro {
         display: flex;
         flex-direction: column;
-        align-items: center !important; /* Centrado en móvil */
+        align-items: center !important;
+        /* Centrado en móvil */
         justify-content: center;
-        min-height: 60vh !important; /* Reducido para móvil */
-        max-width: 100% !important; /* Ancho completo en móvil */
-        margin-left: 1rem !important; /* Márgenes apropiados para móvil */
+        min-height: 60vh !important;
+        /* Reducido para móvil */
+        max-width: 100% !important;
+        /* Ancho completo en móvil */
+        margin-left: 1rem !important;
+        /* Márgenes apropiados para móvil */
         margin-right: 1rem !important;
-        padding: 1rem !important; /* Padding interno */
-        text-align: center !important; /* Texto centrado */
+        padding: 1rem !important;
+        /* Padding interno */
+        text-align: center !important;
+        /* Texto centrado */
     }
 
     /*Estilos para la pagina de about - MÓVIL*/
@@ -52,13 +58,40 @@
         margin-top: 1rem !important;
     }
 
+    /* Optimización específica del texto about descripción */
+    .aboutme-border .texto {
+        font-size: 15px !important;
+        /* Ligeramente más pequeño que el texto general */
+        line-height: 1.5 !important;
+        /* Interlineado más compacto */
+        margin-bottom: 0.75rem !important;
+        /* Menos margen inferior */
+        text-align: justify !important;
+        /* Texto justificado para mejor aprovechamiento */
+    }
+
+    .aboutme-border .margen-grande {
+        margin: 1rem !important;
+        /* Reducir márgenes dentro del aboutme-border */
+    }
+
+    /* Subtítulo más compacto en about */
+    .aboutme-border .subtitulo {
+        font-size: 18px !important;
+        /* Más pequeño que el subtítulo general */
+        margin-bottom: 0.75rem !important;
+        /* Menos espacio debajo */
+        line-height: 1.2 !important;
+        /* Interlineado compacto */
+    }
+
     /*------------------------------------*/
 
     /*Estilos para la página de projects - MÓVIL*/
 
     .image-project-1 {
         flex-direction: column !important;
-        /* Layout vertical */
+        /* Layout vertical - texto arriba, imagen abajo */
         align-items: center !important;
         /* Centrado - CLAVE para evitar problemas de navbar */
         gap: 2rem !important;
@@ -68,8 +101,8 @@
     }
 
     .image-project-2 {
-        flex-direction: column !important;
-        /* Layout vertical */
+        flex-direction: column-reverse !important;
+        /* Layout vertical - texto arriba, imagen abajo (invertido del PC) */
         align-items: center !important;
         /* Centrado - CLAVE para evitar problemas de navbar */
         gap: 2rem !important;
@@ -79,13 +112,26 @@
     }
 
     .movieverse-images {
-        flex-direction: column !important;
-        /* Columna en móvil para las 3 imágenes */
-        align-items: center !important;
-        /* Centrado */
-        gap: 1rem !important;
-        /* Espaciado más compacto */
+        display: grid !important;
+        /* Cambiamos a CSS Grid para mejor control */
+        grid-template-columns: 1fr 1fr !important;
+        /* 2 columnas iguales */
+        grid-template-rows: auto auto !important;
+        /* 2 filas automáticas */
+        gap: 0.8rem !important;
+        /* Espaciado compacto entre imágenes */
         margin: 1rem !important;
+        justify-items: center !important;
+        /* Centrar imágenes en su celda */
+        align-items: center !important;
+    }
+
+    /* Hacer que la tercera imagen ocupe las dos columnas de la segunda fila */
+    .movieverse-images img:nth-child(3) {
+        grid-column: 1 / -1 !important;
+        /* Ocupa desde la primera hasta la última columna */
+        max-width: 60% !important;
+        /* Más pequeña para que se vea proporcionada */
     }
 
     /* Ajustar tamaños de imágenes para móvil */
@@ -106,6 +152,41 @@
 
     /*------------------------------------*/
 
+    /*Estilos para contact - MÓVIL*/
+
+    .form-style {
+        margin-left: 0 !important;
+        /* Eliminar margen lateral */
+        margin-right: 0 !important;
+        padding: 0 1rem !important;
+        /* Padding lateral para respiración */
+        align-items: center !important;
+        /* Centrar elementos del formulario */
+    }
+
+    .boton-style {
+        width: 80% !important;
+        /* Ancho adaptativo en móvil */
+        max-width: 300px !important;
+        /* Ancho máximo */
+        margin: 2rem auto !important;
+        /* Centrado horizontal con margen vertical */
+        display: block !important;
+        /* Asegurar que sea bloque para centrado */
+        text-align: center !important;
+        /* Centrar texto interno */
+    }
+
+    .input-linea {
+        width: 100% !important;
+        /* Inputs ocupan todo el ancho disponible */
+        max-width: 100% !important;
+        /* Sin limitación de ancho máximo */
+    }
+
+    /*------------------------------------*/
+
+
     /*Estilos para el navbar - MÓVIL*/
 
     .navbar-fija {
@@ -119,18 +200,30 @@
 
     .disposition-navbar {
         justify-content: space-between !important;
-        gap: 1rem !important;
-        /* Espaciado entre elementos */
+        gap: 0.5rem !important;
+        /* Espaciado más compacto entre elementos */
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        /* Evitar que se rompa en líneas */
     }
 
     .section-style {
-        gap: 0.5rem !important;
-        /* Espaciado más compacto */
+        gap: 0.3rem !important;
+        /* Espaciado muy compacto */
+        align-items: center !important;
+        flex-shrink: 0 !important;
+        /* No permitir que se encoja */
+        max-width: 60% !important;
+        /* Limitar ancho máximo para evitar desbordamiento */
     }
 
     .project-contact {
-        gap: 1rem !important;
-        /* Espaciado entre enlaces */
+        gap: 0.8rem !important;
+        /* Espaciado más compacto entre enlaces */
+        flex-shrink: 1 !important;
+        /* Permitir encogimiento si es necesario */
+        min-width: 0 !important;
+        /* Permitir encogimiento total */
     }
 
     /* Ajuste del espaciado para navbar más compacta */
@@ -139,9 +232,16 @@
         /* Ajustado para padding reducido */
     }
 
-    /* Language selector más compacto en móvil */
+    /* Language selector optimizado para móvil */
     .language-selector {
-        margin-left: 0.5rem !important;
+        margin-left: 0.6rem !important;
+        /* Más separación del botón Contact */
+        flex-shrink: 0 !important;
+        /* No permitir que se encoja - siempre visible */
+        min-width: fit-content !important;
+        /* Tamaño mínimo necesario */
+        padding-left: 0.2rem !important;
+        /* Padding adicional interno */
     }
 
     /*------------------------------------*/
@@ -374,6 +474,41 @@
 /* Media query para móviles muy pequeños */
 @media (max-width: 480px) {
 
-    /* Estilos para pantallas muy pequeñas */
+    /* Navbar extra compacto para pantallas muy pequeñas */
+    .navbar-fija {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+
+    .disposition-navbar {
+        gap: 0.2rem !important;
+        /* Espaciado mínimo */
+    }
+
+    .section-style {
+        gap: 0.2rem !important;
+        max-width: 65% !important;
+        /* Un poco más de espacio */
+    }
+
+    .project-contact {
+        gap: 0.5rem !important;
+        /* Espaciado mínimo entre enlaces */
+    }
+
+    /* Hacer los links del navbar más compactos */
+    .navbar-item {
+        font-size: 14px !important;
+        /* Texto más pequeño */
+    }
+
+    .language-selector {
+        margin-left: 0.4rem !important;
+        /* Buena separación incluso en pantallas pequeñas */
+        font-size: 12px !important;
+        /* Selector más pequeño */
+        padding-left: 0.1rem !important;
+        /* Padding mínimo adicional */
+    }
 
 }
