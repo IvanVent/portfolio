@@ -13,6 +13,20 @@
         padding: 0 0.5rem;
     }
 
+    .whitespace {
+        height: 40px;
+        width: 100%;
+    }
+
+    /* Asegurar espaciado consistente en todas las secciones principales */
+    section#projects,
+    section#contact {
+        padding-top: 0 !important;
+        /* Eliminar cualquier padding superior inconsistente */
+        margin-top: 0 !important;
+        /* Eliminar márgenes superiores que puedan variar */
+    }
+
     .section-intro {
         display: flex;
         flex-direction: column;
@@ -28,6 +42,8 @@
         margin-right: 1rem !important;
         padding: 1rem !important;
         /* Padding interno */
+        padding-top: 5rem !important;
+        /* Padding superior para evitar solapamiento con navbar fija */
         text-align: center !important;
         /* Texto centrado */
     }
@@ -208,22 +224,24 @@
     }
 
     .section-style {
-        gap: 0.3rem !important;
-        /* Espaciado muy compacto */
+        gap: 0.8rem !important;
+        /* Espaciado adecuado entre project-contact y language-selector */
         align-items: center !important;
         flex-shrink: 0 !important;
         /* No permitir que se encoja */
-        max-width: 60% !important;
-        /* Limitar ancho máximo para evitar desbordamiento */
+        max-width: 65% !important;
+        /* Un poco más de espacio disponible */
     }
 
     .project-contact {
-        gap: 0.8rem !important;
-        /* Espaciado más compacto entre enlaces */
+        gap: 1rem !important;
+        /* Espaciado cómodo entre enlaces Projects y Contact */
         flex-shrink: 1 !important;
         /* Permitir encogimiento si es necesario */
         min-width: 0 !important;
         /* Permitir encogimiento total */
+        margin-right: 0.3rem !important;
+        /* Margen derecho para separación del language-selector */
     }
 
     /* Ajuste del espaciado para navbar más compacta */
@@ -234,14 +252,16 @@
 
     /* Language selector optimizado para móvil */
     .language-selector {
-        margin-left: 0.6rem !important;
-        /* Más separación del botón Contact */
+        margin-left: 0.8rem !important;
+        /* Buena separación del botón Contact */
         flex-shrink: 0 !important;
         /* No permitir que se encoja - siempre visible */
         min-width: fit-content !important;
         /* Tamaño mínimo necesario */
-        padding-left: 0.2rem !important;
-        /* Padding adicional interno */
+        padding-left: 0.3rem !important;
+        /* Padding adicional interno mejorado */
+        padding-right: 0.2rem !important;
+        /* Padding derecho para balance visual */
     }
 
     /*------------------------------------*/
@@ -281,6 +301,23 @@
 
     .colaborar {
         text-align: center !important;
+        margin: 1rem 1rem !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        /* Centrado perfecto */
+    }
+
+    /* Optimizar el texto dentro de colaborar */
+    .colaborar .texto {
+        font-size: 16px !important;
+        /* Tamaño apropiado para móvil */
+        line-height: 1.4 !important;
+        /* Interlineado cómodo */
+        text-align: center !important;
+        /* Centrado del texto */
+        max-width: 90% !important;
+        /* Limitar ancho para mejor lectura */
     }
 
     .hr {
@@ -486,14 +523,17 @@
     }
 
     .section-style {
-        gap: 0.2rem !important;
-        max-width: 65% !important;
-        /* Un poco más de espacio */
+        gap: 0.5rem !important;
+        /* Espaciado mínimo pero visible */
+        max-width: 70% !important;
+        /* Más espacio para elementos */
     }
 
     .project-contact {
-        gap: 0.5rem !important;
-        /* Espaciado mínimo entre enlaces */
+        gap: 0.6rem !important;
+        /* Espaciado mínimo pero cómodo entre enlaces */
+        margin-right: 0.2rem !important;
+        /* Margen derecho para separación */
     }
 
     /* Hacer los links del navbar más compactos */
@@ -503,12 +543,14 @@
     }
 
     .language-selector {
-        margin-left: 0.4rem !important;
+        margin-left: 0.5rem !important;
         /* Buena separación incluso en pantallas pequeñas */
         font-size: 12px !important;
         /* Selector más pequeño */
-        padding-left: 0.1rem !important;
-        /* Padding mínimo adicional */
+        padding-left: 0.2rem !important;
+        /* Padding mínimo pero suficiente */
+        padding-right: 0.1rem !important;
+        /* Balance visual */
     }
 
 }
