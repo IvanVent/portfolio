@@ -40,10 +40,10 @@
   cursor: pointer;
   transition: background 0.2s;
   width: 250px;
-  border-top: 2px solid var(--color-gris);
-  border-left: 2px solid var(--color-gris);
-  border-bottom: 2px solid var(--color-negro-total);
-  border-right: 2px solid var(--color-negro-total);
+  border-top: 4px solid var(--color-gris);
+  border-left: 4px solid var(--color-gris);
+  border-bottom: 4px solid var(--color-negro-total);
+  border-right: 4px solid var(--color-negro-total);
   margin-top: 20px;
 }
 
@@ -307,7 +307,7 @@ a:focus {
 
 
 :root {
-  --color-negro: #0f0f0f;
+  --color-negro: #151414;
   --color-negro-total: #000000;
   --color-gris: rgba(255, 255, 255, 0.2);
   --color-gris-oscuro: #343a40;
